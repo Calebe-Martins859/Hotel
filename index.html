@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEU PARAÍSO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>TEU PARAÍSO</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#rooms">Quartos</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#reviews">Avaliações</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bem-vindo ao Teu Paraíso!</h2>
+        <p>Desfrute de uma estadia luxuosa e confortável em um dos nossos quartos exclusivos.</p>
+        <a href="#contact" class="btn">Faça sua Reserva</a>
+    </section>
+
+    <section id="nos">
+        <h2>Sobre nós!</h2>
+        <p>Nós somos uma empresa que começamos com um pequeno local com poucos quartos, mas fomos crescendo, obtemos
+            lucros e decidimos fazer um local maior para aumentar a demanda e o conforto dos clientes visando qualidade
+            em 1º lugar.</p>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços!</h2>
+        <ul>
+            <li>Café da manhã</li>
+            <li>Frigobar</li>
+            <li>Piscina</li>
+            <li>Hidromassagem</li>
+            <li>Brinquedoteca</li>
+            <li>Ar condicionado</li>
+        </ul>
+    </section>
+
+    <section id="rooms">
+        <h2>Quartos</h2>
+        <div class="quartos">
+            <div class="room">
+                <h3>Quarto Standard</h3>
+                <p>Quarto simples e confortável com todas as comodidades necessárias.</p>
+                <a href="#contact" class="btn">Reservar Agora</a>
+            </div>
+            <div class="room">
+                <h3>Quarto Luxo</h3>
+                <p>Quarto elegante com vista para o mar e uma cama king size.</p>
+                <a href="#contact" class="btn">Reservar Agora</a>
+            </div>
+            <div class="room">
+                <h3>Suíte Master</h3>
+                <p>Suíte sofisticada com jacuzzi e varanda privativa.</p>
+                <a href="#contact" class="btn">Reservar Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Galeria de Fotos</h2>
+        <div class="gallery-container">
+            <img src="hotel 1.webp" alt="Hotel View 1">
+            <img src="hotel 2.jpg" alt="Hotel View 2">
+            <img src="hotel 3.jfif" alt="Hotel View 3">
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Avaliações</h2>
+        <div class="review">
+            <p>"Excelente hotel, atendimento impecável e quartos confortáveis!" - João Silva</p>
+        </div>
+        <div class="review">
+            <p>"Estadia maravilhosa, a vista do quarto é indescritível." - Maria Oliveira</p>
+        </div>
+        <div class="review">
+            <p>"Recomendo muito! O café da manhã é uma delícia." - Paulo Souza</p>
+        </div>
+        <div class="avaliacao">
+            <a href="#contact" class="btn">Deixe sua Avaliação</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contato e Reserva</h2>
+        <form action="submit_reservation.php" method="POST">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+            <label for="room">Escolha o Quarto</label>
+            <select id="room" name="room" required>
+                <option value="standard">Quarto Standard</option>
+                <option value="luxury">Quarto Luxo</option>
+                <option value="suite">Suíte Master</option>
+            </select>
+            <label for="dates">Datas da Estadia</label>
+            <input type="text" id="dates" name="dates" placeholder="Ex: 20/12/2024 - 25/12/2024" required>
+            <button type="submit" class="btn">Reservar Agora</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TEU PARAÍSO. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
